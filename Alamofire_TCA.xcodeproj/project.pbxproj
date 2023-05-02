@@ -7,18 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF20F34A29FF538D00159FA9 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF20F34929FF538D00159FA9 /* APIError.swift */; };
 		CF98689829FE3CB20009299D /* Alamofire_TCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF98689729FE3CB20009299D /* Alamofire_TCAApp.swift */; };
 		CF98689A29FE3CB20009299D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF98689929FE3CB20009299D /* ContentView.swift */; };
 		CF98689C29FE3CB30009299D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF98689B29FE3CB30009299D /* Assets.xcassets */; };
 		CF98689F29FE3CB30009299D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF98689E29FE3CB30009299D /* Preview Assets.xcassets */; };
+		CF9868A729FE3CEF0009299D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CF9868A629FE3CEF0009299D /* ComposableArchitecture */; };
+		CF9868A929FE3D670009299D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9868A829FE3D670009299D /* Post.swift */; };
+		CF9868AE29FE3E890009299D /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9868AD29FE3E890009299D /* ApiClient.swift */; };
+		CF9868B029FE3F3E0009299D /* PostFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9868AF29FE3F3E0009299D /* PostFeature.swift */; };
+		CF9D233A2A00AC51005FEAD3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9D23392A00AC51005FEAD3 /* Comment.swift */; };
+		CF9D233C2A00B01A005FEAD3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9D233B2A00B01A005FEAD3 /* User.swift */; };
+		CFD446232A00B29A004912E8 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD446222A00B29A004912E8 /* PostDetailView.swift */; };
+		CFD446252A00B548004912E8 /* CommentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD446242A00B548004912E8 /* CommentItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CF98689429FE3CB20009299D /* Alamofire_TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alamofire_TCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF20F34929FF538D00159FA9 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		CF98689429FE3CB20009299D /* Networking_TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Networking_TCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF98689729FE3CB20009299D /* Alamofire_TCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire_TCAApp.swift; sourceTree = "<group>"; };
 		CF98689929FE3CB20009299D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CF98689B29FE3CB30009299D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF98689E29FE3CB30009299D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CF9868A829FE3D670009299D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CF9868AD29FE3E890009299D /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		CF9868AF29FE3F3E0009299D /* PostFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFeature.swift; sourceTree = "<group>"; };
+		CF9D23392A00AC51005FEAD3 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		CF9D233B2A00B01A005FEAD3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CFD446222A00B29A004912E8 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		CFD446242A00B548004912E8 /* CommentItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF9868A729FE3CEF0009299D /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +61,7 @@
 		CF98689529FE3CB20009299D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CF98689429FE3CB20009299D /* Alamofire_TCA.app */,
+				CF98689429FE3CB20009299D /* Networking_TCA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +73,11 @@
 				CF98689929FE3CB20009299D /* ContentView.swift */,
 				CF98689B29FE3CB30009299D /* Assets.xcassets */,
 				CF98689D29FE3CB30009299D /* Preview Content */,
+				CF9D233D2A00B020005FEAD3 /* Model */,
+				CF9868AD29FE3E890009299D /* ApiClient.swift */,
+				CF9868AF29FE3F3E0009299D /* PostFeature.swift */,
+				CF20F34929FF538D00159FA9 /* APIError.swift */,
+				CFD446222A00B29A004912E8 /* PostDetailView.swift */,
 			);
 			path = Alamofire_TCA;
 			sourceTree = "<group>";
@@ -67,12 +90,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CF9D233D2A00B020005FEAD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF9868A829FE3D670009299D /* Post.swift */,
+				CF9D23392A00AC51005FEAD3 /* Comment.swift */,
+				CF9D233B2A00B01A005FEAD3 /* User.swift */,
+				CFD446242A00B548004912E8 /* CommentItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CF98689329FE3CB20009299D /* Alamofire_TCA */ = {
+		CF98689329FE3CB20009299D /* Networking_TCA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CF9868A229FE3CB30009299D /* Build configuration list for PBXNativeTarget "Alamofire_TCA" */;
+			buildConfigurationList = CF9868A229FE3CB30009299D /* Build configuration list for PBXNativeTarget "Networking_TCA" */;
 			buildPhases = (
 				CF98689029FE3CB20009299D /* Sources */,
 				CF98689129FE3CB20009299D /* Frameworks */,
@@ -82,9 +116,12 @@
 			);
 			dependencies = (
 			);
-			name = Alamofire_TCA;
+			name = Networking_TCA;
+			packageProductDependencies = (
+				CF9868A629FE3CEF0009299D /* ComposableArchitecture */,
+			);
 			productName = Alamofire_TCA;
-			productReference = CF98689429FE3CB20009299D /* Alamofire_TCA.app */;
+			productReference = CF98689429FE3CB20009299D /* Networking_TCA.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,11 +148,14 @@
 				Base,
 			);
 			mainGroup = CF98688B29FE3CB20009299D;
+			packageReferences = (
+				CF9868A529FE3CEF0009299D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = CF98689529FE3CB20009299D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CF98689329FE3CB20009299D /* Alamofire_TCA */,
+				CF98689329FE3CB20009299D /* Networking_TCA */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +177,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFD446252A00B548004912E8 /* CommentItem.swift in Sources */,
+				CFD446232A00B29A004912E8 /* PostDetailView.swift in Sources */,
+				CF9868A929FE3D670009299D /* Post.swift in Sources */,
 				CF98689A29FE3CB20009299D /* ContentView.swift in Sources */,
+				CF9868B029FE3F3E0009299D /* PostFeature.swift in Sources */,
+				CF9D233A2A00AC51005FEAD3 /* Comment.swift in Sources */,
+				CF9D233C2A00B01A005FEAD3 /* User.swift in Sources */,
 				CF98689829FE3CB20009299D /* Alamofire_TCAApp.swift in Sources */,
+				CF9868AE29FE3E890009299D /* ApiClient.swift in Sources */,
+				CF20F34A29FF538D00159FA9 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +377,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF9868A229FE3CB30009299D /* Build configuration list for PBXNativeTarget "Alamofire_TCA" */ = {
+		CF9868A229FE3CB30009299D /* Build configuration list for PBXNativeTarget "Networking_TCA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF9868A329FE3CB30009299D /* Debug */,
@@ -339,6 +387,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF9868A529FE3CEF0009299D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.52.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF9868A629FE3CEF0009299D /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF9868A529FE3CEF0009299D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CF98688C29FE3CB20009299D /* Project object */;
 }

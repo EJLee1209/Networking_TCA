@@ -6,21 +6,51 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct ContentView: View {
+    let store: StoreOf<PostFeature>
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        WithViewStore(self.store) { viewStore in
+            NavigationView {
+                ZStack{
+                    List {
+                        ForEach(viewStore.posts , id:\.id) { post in
+                            NavigationLink {
+                                PostDetailView(
+                                    post: post,
+                                    store: viewStore
+                                )
+                            } label: {
+                                Text(post.title)
+                            }
+                        }
+                    }
+                    .onAppear{
+                        viewStore.send(.attachPosts)
+                    }
+                    .refreshable {
+                        viewStore.send(.attachPosts)
+                    }
+                    .navigationTitle("TCA 통신 예제")
+                    
+                    if viewStore.isLoading {
+                        ProgressView()
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(
+            store: Store(
+                initialState: PostFeature.State(),
+                reducer: PostFeature()
+            )
+        )
     }
 }
